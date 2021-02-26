@@ -81,12 +81,42 @@ class Array {
     }
 }
 
-/**************************************************EXPLORE THE PUSH() METHOD ***************************************************/
+/******************************************* EXPLORE THE PUSH() METHOD /POP() METHOD ***************************************************/
 function main(){
     Array.SIZE_RATIO = 3
     let arr = new Array() // creates new instance of the Array clas
     arr.push(3)
+    arr.push(5);
+    arr.push(15);
+    arr.push(19);
+    arr.push(45);
+    arr.push(10);
+    arr.pop();
+    arr.pop();
+    arr.pop();
     console.log(arr)
+    console.log(arr.get(0))
+
+    arr = new Array()
+    arr.push('tauhida')
+    console.log(arr)
+    console.log(arr.get(0))
 }
 
 main()
+
+/*
+What is the length, capacity and memory address? 
+    - {length: 1, capacity: 3, ptr: 0} => with one arr.push(3)
+    - {length: 6, capacity: 12, ptr: 3} => with arr.push(5), 15,19,45,10
+    - {length: 3, capacity: 12, ptr: 3} => with arr.pop() 3 times
+*/
+
+/**************************************** UNDERSTANDING MORE ABOUT HOW ARRAYS WORK ****************************************************/
+//print the first item im the array arr  => added console.log(arr.get(0)) => gets the first item in the array
+//Print after pushing ('tauhida') into a new array => Array {length: 1, capacity: 3, ptr: 15} NAN
+//  - return lenght of 1, capacity of three but the new memory address is at 15 (instead of 0)
+//  - Also the value at index 0 is NaN
+
+
+

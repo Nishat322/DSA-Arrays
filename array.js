@@ -114,9 +114,12 @@ What is the length, capacity and memory address?
 
 /**************************************** UNDERSTANDING MORE ABOUT HOW ARRAYS WORK ****************************************************/
 //print the first item im the array arr  => added console.log(arr.get(0)) => gets the first item in the array
-//Print after pushing ('tauhida') into a new array => Array {length: 1, capacity: 3, ptr: 15} NAN
-//  - return lenght of 1, capacity of three but the new memory address is at 15 (instead of 0)
-//  - Also the value at index 0 is NaN
+/*
+Print after pushing ('tauhida') into a new array => Array {length: 1, capacity: 3, ptr: 15} NAN
+    - return lenght of 1, capacity of three but the new memory address is at 15 (instead of 0)
+    - Also the value at index 0 is NaN
+*/
+//The purpose of the resize method is to increase capacity when needed
 
 
 
